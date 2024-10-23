@@ -5,11 +5,22 @@ import Image from "next/image";
 interface Params {
   cabinId: string;
 }
+
+interface Cabin {
+  id: number;
+  name: string;
+  maxCapacity: number;
+  regularPrice: number;
+  discount: number;
+  image: string;
+  description: string;
+}
+
 type CabinProps = {
   params: Params;
 };
 
-export async function generateMetadata({ params }: { params: Params }) {
+export async function generateMetadata({ params }: CabinProps) {
   const { name } = await getCabin(params.cabinId);
   return { title: `Cabin ${name}` };
 }
@@ -17,7 +28,7 @@ export async function generateMetadata({ params }: { params: Params }) {
 export default async function Page({ params }: CabinProps) {
   const cabin = await getCabin(params.cabinId);
 
-  const { name, maxCapacity, image, description } = cabin;
+  const { name, maxCapacity, image, description }: Cabin = cabin;
 
   return (
     <div className="max-w-6xl mx-auto mt-8">
