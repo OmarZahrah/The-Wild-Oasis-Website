@@ -18,7 +18,7 @@ type CabinCardProps = {
 function CabinCard({ cabin }: CabinCardProps) {
   const { id, name, maxCapacity, regularPrice, discount, image } = cabin;
   return (
-    <div className="flex border-primasry-800 border">
+    <div className="flex border-primary-800 border">
       <div className="flex-1 relative">
         <Image
           src={image}

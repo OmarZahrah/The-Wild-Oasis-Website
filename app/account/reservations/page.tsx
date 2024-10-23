@@ -1,4 +1,4 @@
-import ReservationCard from "@/app/_components/ReservationCard";
+// import ReservationCard from "@/app/_components/ReservationCard";
 
 export const metadata = {
   title: "Reservations",
@@ -6,7 +6,7 @@ export const metadata = {
 
 export default function Page() {
   // CHANGE
-  const bookings = [];
+  // const bookings = [];
 
   return (
     <div>
@@ -14,7 +14,7 @@ export default function Page() {
         Your reservations
       </h2>
 
-      {bookings.length === 0 ? (
+      {/* {bookings.length === 0 ? (
         <p className="text-lg">
           You have no reservations yet. Check out our{" "}
           <a className="underline text-accent-500" href="/cabins">
@@ -27,7 +27,7 @@ export default function Page() {
             <ReservationCard booking={booking} key={booking.id} />
           ))}
         </ul>
-      )}
+      )} */}
     </div>
   );
 }
