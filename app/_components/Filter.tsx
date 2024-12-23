@@ -1,7 +1,6 @@
 "use client";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import path from "path";
 
 export default function Filter() {
   const searchParams = useSearchParams();
