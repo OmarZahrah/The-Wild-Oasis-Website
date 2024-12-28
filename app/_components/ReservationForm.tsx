@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { useReservationContext } from "./ReservationContext";
 
-function ReservationForm({ cabin }) {
-  // CHANGE
+function ReservationForm({ cabin, user }) {
   const { maxCapacity } = cabin;
   const { range } = useReservationContext();
 
@@ -12,16 +12,17 @@ function ReservationForm({ cabin }) {
       <div className="bg-primary-800 text-primary-300 px-16 py-2 flex justify-between items-center">
         <p>Logged in as</p>
 
-        {/* <div className='flex gap-4 items-center'>
-          <img
-            // Important to display google profile images
-            referrerPolicy='no-referrer'
-            className='h-8 rounded-full'
+        <div className="flex gap-4 items-center">
+          <Image
+            width={32}
+            height={32}
+            referrerPolicy="no-referrer"
+            className="h-8 rounded-full"
             src={user.image}
             alt={user.name}
           />
           <p>{user.name}</p>
-        </div> */}
+        </div>
       </div>
 
       <form className="bg-primary-900 py-10 px-16 text-lg flex gap-5 flex-col">
