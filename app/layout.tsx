@@ -2,6 +2,8 @@ import Header from "./_components/Header";
 import "@/app/_styles/globals.css";
 import { Josefin_Sans } from "next/font/google";
 import { ReservationProvider } from "./_components/ReservationContext";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const josefin = Josefin_Sans({ subsets: ["latin"], display: "swap" });
 
@@ -30,6 +32,8 @@ export default function RootLayout({ children }: layoutProps) {
             <ReservationProvider>{children}</ReservationProvider>
           </main>
         </div>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
