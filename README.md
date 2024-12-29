@@ -50,18 +50,18 @@
 ![Homepage Screenshot](./public/Screenshots/home.jpg)
 </br>
 </br>
-![About Page Screenshot](./Screenshots/about.jpg)
+![About Page Screenshot](./public/Screenshots/about.jpg)
 </br>
 </br>
-![Cabins Screenshot](./Screenshots/cabins.jpg)
+![Cabins Screenshot](./public/Screenshots/cabins.jpg)
 </br>
 </br>
-![Cabin Screenshot](./Screenshots/cabin.jpg)
+![Cabin Screenshot](./public/Screenshots/cabin.jpg)
 </br>
 </br>
-![Reservation Screenshot](./Screenshots/reservation.jpg)
+![Reservation Screenshot](./public/Screenshots/reservation.jpg)
 </br>
 </br>
-![Profile Screenshot](./Screenshots/profile.jpg)
+![Profile Screenshot](./public/Screenshots/profile.jpg)
 
 <br/>
