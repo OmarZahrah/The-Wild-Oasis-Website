@@ -45,21 +45,23 @@
 
 ## Screenshots
 
-![Homepage Screenshot](./public/screenshots/home.jpg)
+## Screenshots
+
+![Homepage Screenshot](./screenshots/home.jpg)
 </br>
 </br>
-![about page Screenshot](./public/screenshots/about.jpg)
+![About Page Screenshot](./screenshots/about.jpg)
 </br>
 </br>
-![cabins Screenshot](./public/screenshots/cabins.jpg)
+![Cabins Screenshot](./screenshots/cabins.jpg)
 </br>
 </br>
-![cabin Screenshot](./public/screenshots/cabin.jpg)
+![Cabin Screenshot](./screenshots/cabin.jpg)
 </br>
 </br>
-![reservation Screenshot](./public/screenshots/reservation.jpg)
+![Reservation Screenshot](./screenshots/reservation.jpg)
 </br>
 </br>
-![profile Screenshot](./public/screenshots/profile.jpg)
+![Profile Screenshot](./screenshots/profile.jpg)
 
 <br/>
