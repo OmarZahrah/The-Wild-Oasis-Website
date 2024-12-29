@@ -23,10 +23,15 @@ function isAlreadyBooked(range, datesArr) {
 function DateSelector({ settings, cabin, bookedDates }) {
   const { range, setRange, resetRange } = useReservationContext();
 
-  const displayRange = isAlreadyBooked(range, bookedDates) ? {} : range;
+  const displayRange = isAlreadyBooked(range, bookedDates)
+    ? { from: undefined, to: undefined }
+    : range || { from: undefined, to: undefined };
 
   const { regularPrice, discount } = cabin;
-  const numNights = differenceInDays(displayRange.to, displayRange.from);
+  const numNights = differenceInDays(
+    displayRange.to ?? new Date(),
+    displayRange.from ?? new Date()
+  );
   const cabinPrice = numNights * (regularPrice - discount);
 
   const { minBookingLength, maxBookingLength } = settings;
@@ -79,7 +84,7 @@ function DateSelector({ settings, cabin, bookedDates }) {
           ) : null}
         </div>
 
-        {range.from || range.to ? (
+        {range?.from || range?.to ? (
           <button
             className="border border-primary-800 py-2 px-4 text-sm font-semibold"
             onClick={resetRange}
