@@ -47,21 +47,21 @@
 
 ## Screenshots
 
-![Homepage Screenshot](./screenshots/home.jpg)
+![Homepage Screenshot](./public/Screenshots/home.jpg)
 </br>
 </br>
-![About Page Screenshot](./screenshots/about.jpg)
+![About Page Screenshot](./public/Screenshots/about.jpg)
 </br>
 </br>
-![Cabins Screenshot](./screenshots/cabins.jpg)
+![Cabins Screenshot](./public/Screenshots/cabins.jpg)
 </br>
 </br>
-![Cabin Screenshot](./screenshots/cabin.jpg)
+![Cabin Screenshot](./public/Screenshots/cabin.jpg)
 </br>
 </br>
-![Reservation Screenshot](./screenshots/reservation.jpg)
+![Reservation Screenshot](./public/Screenshots/reservation.jpg)
 </br>
 </br>
-![Profile Screenshot](./screenshots/profile.jpg)
+![Profile Screenshot](./public/Screenshots/profile.jpg)
 
 <br/>
