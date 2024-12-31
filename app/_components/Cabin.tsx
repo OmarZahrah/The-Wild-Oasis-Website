@@ -15,8 +15,8 @@ interface Cabin {
 export default function Cabin({ cabin }) {
   const { name, maxCapacity, image, description }: Cabin = cabin;
   return (
-    <div className="grid grid-cols-[3fr_4fr] gap-20 border border-primary-800 py-3 px-10 mb-24">
-      <div className="relative scale-[1.15] -translate-x-3">
+    <div className=" flex flex-col md:grid md:grid-cols-[3fr_4fr] gap-20 md:border border-primary-800 py-3 md:px-10 mb-24">
+      <div className="relative max-md:w-full max-md:h-[20rem] md:scale-[1.15] md:-translate-x-3">
         <Image
           fill
           className="object-cover"
@@ -25,8 +25,8 @@ export default function Cabin({ cabin }) {
         />
       </div>
 
-      <div>
-        <h3 className="text-accent-100 font-black text-7xl mb-5 translate-x-[-254px] bg-primary-950 p-6 pb-1 w-[150%]">
+      <div className="z-10">
+        <h3 className="text-accent-100 font-black text-7xl mb-5 md:translate-x-[-254px] bg-primary-950 pt-6 md:p-6 pb-1 w-[150%]">
           Cabin {name}
         </h3>
 
