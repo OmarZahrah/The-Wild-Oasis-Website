@@ -22,7 +22,7 @@ function ReservationCard({ booking, onDelete }) {
   } = booking;
 
   return (
-    <div className="flex border border-primary-800">
+    <div className="flex max-md:flex-col border border-primary-800">
       <div className="relative h-32 aspect-square">
         <Image
           fill
@@ -68,7 +68,7 @@ function ReservationCard({ booking, onDelete }) {
         </div>
       </div>
 
-      <div className="flex flex-col border-l border-primary-800 w-[100px]">
+      <div className="flex max-md:p-5 md:flex-col border-l border-primary-800 w-[100px]">
         {!isPast(startDate) ? (
           <>
             <Link
